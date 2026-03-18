@@ -1,9 +1,10 @@
+```mermaid
 sequenceDiagram
     actor user
     participant browser
     participant server
 
-     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
@@ -35,4 +36,4 @@ sequenceDiagram
     server-->>-browser: 302 Redirect to /notes
 
     Note right of browser: The browser redirects to /exampleapp/notes
-    
+```
